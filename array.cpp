@@ -42,15 +42,16 @@ int findMax(int a[],int n,int &indexmax , int & valuemax)
 	cout<<"max:";
 	return valuemax;
 }
-void main(int argc,char*argv[])
+int main(int argc,char*argv[])
 {
 	int n,value,a[10],indexmax,valuemax;
 	cout<<"enter number:";
 	cin>>n;
 	cout<<"enter value:";
-    cin>>value;
+        cin>>value;
 	getArray(a,n);
 	printArray(a,n);
 	cout<<findMax(a,n,indexmax,valuemax)<<"\n";
 	cout<<searchArray(a,n,value)<<"\n";
+	return 0;
 }
